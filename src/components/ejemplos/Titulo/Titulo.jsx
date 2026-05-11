@@ -1,6 +1,6 @@
 import "./titulo.css"
 
-import banner from  "../../img/react-banner.webp"
+import banner from  "../../../img/react-banner.webp"
 
 const Titulo = () =>{
 
@@ -9,6 +9,7 @@ const Titulo = () =>{
         <div className="titulo">
           <img src={banner} alt="" className="titulo-img" />
           <h2 className="titulo-h2" >Bienvenidos a la 2da clase!</h2>
+          
         </div>
     );
 };
