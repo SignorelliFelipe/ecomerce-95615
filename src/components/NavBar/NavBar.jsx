@@ -3,6 +3,22 @@ import CartWidget from "../CartWidget/CartWidget"
 import "./navbar.css"
 
 const NavBar = () => {
+
+  const categories=[
+    {
+      id: 1,
+      label: "Teclados"
+    },
+    {
+      id: 2,
+      label: "Mouse"
+    },
+    {
+      id: 3,
+      label: "Monitores"
+    }
+  ]
+
   return (
     <nav className ='navbar'>
         <div className='brand'>
@@ -11,9 +27,11 @@ const NavBar = () => {
 
 
         <ul className='categories'>
-            <li>Teclados</li>
-            <li>Mouse</li>
-            <li>Monitores</li>
+           {
+            categories.map((category)=> (
+               <li key={category.id}> {category.label} </li>
+            ))
+           }
         </ul>
 
         <CartWidget />

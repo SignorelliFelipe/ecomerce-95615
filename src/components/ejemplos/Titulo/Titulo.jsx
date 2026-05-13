@@ -8,7 +8,7 @@ const Titulo = () =>{
     return(
         <div className="titulo">
           <img src={banner} alt="" className="titulo-img" />
-          <h2 className="titulo-h2" >Bienvenidos a la 2da clase!</h2>
+        <h2 className="titulo-h2" >Bienvenidos a la 2da clase!</h2>
           
         </div>
     );
